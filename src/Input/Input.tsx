@@ -8,7 +8,6 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 export const Input = ({ label, error, ...props }: InputProps) => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '1rem' }}>
-      {label && <label style={{ marginBottom: '0.25rem', fontWeight: 'bold'  , color : 'red' }}>{label}</label>}
       <input
         {...props}
         style={{
