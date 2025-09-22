@@ -12,10 +12,10 @@ var __rest = (this && this.__rest) || function (s, e) {
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 export const Input = (_a) => {
     var { label, error } = _a, props = __rest(_a, ["label", "error"]);
-    return (_jsxs("div", { style: { display: 'flex', flexDirection: 'column', marginBottom: '1rem' }, children: [label && _jsx("label", { style: { marginBottom: '0.25rem', fontWeight: 'bold' }, children: label }), _jsx("input", Object.assign({}, props, { style: {
+    return (_jsxs("div", { style: { display: 'flex', flexDirection: 'column', marginBottom: '1rem' }, children: [label && _jsx("label", { style: { marginBottom: '0.25rem', fontWeight: 'bold', color: 'red' }, children: label }), _jsx("input", Object.assign({}, props, { style: {
                     padding: '0.5rem',
-                    border: error ? '1px solid red' : '1px solid #f08 ouline-none',
+                    border: error ? '5px solid red' : '5px solid #ccc', // اصلاح شد
                     borderRadius: '4px',
-                    fontSize: '3rem'
+                    fontSize: '1rem' // اصلاح شد از 3rem به 1rem
                 } })), error && _jsx("span", { style: { color: 'red', marginTop: '0.25rem', fontSize: '0.875rem' }, children: error })] }));
 };
