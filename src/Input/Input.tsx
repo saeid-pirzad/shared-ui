@@ -13,9 +13,9 @@ export const Input = ({ label, error, ...props }: InputProps) => {
         {...props}
         style={{
           padding: '0.5rem',
-          border: error ? '1px solid red' : '1px solid #ccc',
+          border: error ? '1px solid red' : '1px solid #f08 ouline-none',
           borderRadius: '4px',
-          fontSize: '1rem'
+          fontSize: '3rem'
         }}
       />
       {error && <span style={{ color: 'red', marginTop: '0.25rem', fontSize: '0.875rem' }}>{error}</span>}
